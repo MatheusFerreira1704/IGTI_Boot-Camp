@@ -1,8 +1,10 @@
+/* Estilo do documento HTML como um todo */
 html {
   font-size: 18x;
   font-family: Arial;
 }
 
+/* Estilização do elemento filho da lista */
 ul.listaBonita > li {
   list-style: none;
   border-width: 2px;
@@ -12,32 +14,38 @@ ul.listaBonita > li {
   border-right-style: solid;
 }
 
+/* Estilização da lista como um todo */
 ul.listaBonita {
   color: #353535;
 }
 
+/* Estilização apenas para o primeiro filho da lista */
 ul.listaBonita > li:first-child {
   border-top-style: solid;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
+/* Estilização apenas para o último filho da lista */
 ul.listaBonita > li:last-child {
   border-bottom-style: solid;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
+/* Estilização de seleção de item da lista, para mudar de cor quando o mouse passar. */
 ul.listaBonita > li:hover {
   background-color: #a0a0a0;
 }
 
+/* Estilização dos itens da lista com a classe selecionado. */
 ul.listaBonita > li.selecionado {
   background-color: #bfdbff;
   border-color: #2e79db;
   border-bottom-style: solid;
 }
 
+/* Estilização para não duplicação de borda. */
 ul.listaBonita > li:not(.selecionado) + li {
   border-top-style: solid;
 }
