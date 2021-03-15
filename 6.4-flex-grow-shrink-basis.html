@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="flexbox.css" />
+</head>
+<body>
+  <h3>flex</h3>
+  <div class="fb">
+    <!-- Propriedade flex, recebe três valores, como seguinte padrão:
+    O primeiro valor é o flex row, o segundo valor é o flex-shrink,
+    o terceiro valor é o flex-basis. -->
+    <div style="flex: 0 1 auto">0 1 auto</div>
+    <div>01 auto</div>
+  </div>
+
+  <!-- flex-basis é o tamanho inicial, antes da distribuição do espaço.-->
+  <h3>flex-basis</h3>
+  <div class="fb">
+    <div style="flex-basis: 150px">0 1 150px</div>
+    <div>01 auto</div>
+  </div>
+
+  <h3>flex-gorw</h3>
+  <div class="fb">
+    <div>01 auto</div>
+    <div style="flex-grow: 1">1 1 auto</div>
+  </div>
+
+  <div class="fb">
+    <div style="flex: 2 1 auto">2 1 auto</div>
+    <div style="flex: 1 1 auto">1 1 auto</div>
+  </div>
+
+  <h3>flex</h3>
+  <div class="fb">
+    <!-- Quando o shrink é 0, o elemento não pode diminuir. -->
+    <div style="flex-shrink: 0">
+      0 0 auto<br />xpto xpto xpto xpto xpto xpto xpto xpto xpto xptox xpto xpto
+      xpto xpto xpto xpto xpto xpto xpto xpto xpto xpto
+    </div>
+    <div style="flex-shrink: 0">0 0 auto</div>
+  </div>
+  <div class="fb">
+    <div style="flex: 0 1 auto">
+      0 1 auto<br />xpto xpto xpto xpto xpto xpto xpto xpto xpto xptox xpto xpto
+      xpto xpto xpto xpto xpto xpto xpto xpto xpto xpto
+    </div>
+    <div style="flex: 0 0 auto">0 0 auto</div>
+  </div>
+</body>

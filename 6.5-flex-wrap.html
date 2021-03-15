@@ -1,0 +1,43 @@
+<!-- flex wrap, usado para quebra de linha-->
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="flexbox.css" />
+</head>
+<body>
+  <h1>flex-wrap</h1>
+  <!-- NOWRAP Não permite quebra de linha -->
+  <h3>nowrap</h3>
+  <div class="fb" style="flex-wrap: nowrap">
+    <div>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+    <div>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+    <div>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+    <div>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+  </div>
+
+  <h3>wrap</h3>
+  <!--  WRAP Permite quebra de linha-->
+  <div class="fb" style="flex-wrap: wrap">
+    <div>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+    <div>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+    <div>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+    <div>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+  </div>
+
+  <h3>wrap com flex-grow</h3>
+  <!-- Depois da quebra de linha os espaços são preenchidos, 
+    1 a propriedade pode crescer, 0 a propriedade não pode crescer-->
+  <div class="fb" style="flex-wrap: wrap">
+    <div style="flex: 0 1 auto">
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    </div>
+    <div style="flex: 0 1 auto">
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    </div>
+    <div style="flex: 1 1 auto">
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    </div>
+    <div style="flex: 1 1 auto">
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    </div>
+  </div>
+</body>
