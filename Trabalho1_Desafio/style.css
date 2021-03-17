@@ -2,22 +2,66 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
 }
-
-h1 {
-  color: DarkCyan;
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
-div > div {
-  font-size: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.app {
+  background-color: #fff;
+  padding: 8px;
 }
 
 button {
-  font-size: 20px;
+  font-size: 1.3rem;
 }
+h1 {
+  font-size: 1.3rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+
+h1,
+h2,
+table,
+button,
+label {
+  margin: 4px;
+}
+
+h1,
+h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+h1,
+h2,
 th {
-  color: DarkCyan;
-  font-size: 20px;
+  color: darkgreen;
+  font-weight: bolder;
+}
+
+label {
+  display: inline-block;
+}
+
+input {
+  width: 10rem;
+  display: block;
+  font-size: 1rem;
+}
+
+th,
+td {
+  padding-left: 8px;
+  text-align: right;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+  text-align: left;
 }

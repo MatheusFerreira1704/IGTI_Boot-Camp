@@ -1,58 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simulação de Financeiamento</title>
   </head>
   <body>
-    <div>
+    <div class="app">
       <h1>Simulação de Financeiamento</h1>
-    </div>
-    <div>
-      <div>
-        <label>Valor:</label>
-        <label>Prazo (anos):</label>
-        <label>Juros ao ano:</label>
+      <div class="campos">
+        <label>Valor: <input id="valor" type="number" value="200000" /></label>
+        <label
+          >Prazo (anos): <input id="prazo" type="number" value="20"
+        /></label>
+        <label
+          >Juros ao ano: <input id="juros" type="numer" value="0.08"
+        /></label>
       </div>
+      <button onclick="calcular()">Simular</button>
       <div>
-        <input type="number" value="200.000" />
-        <input type="number" value="20" />
-        <input type="numer" value="0,08" />
+      <h2>Resultado</h2>
+      <div class="campos">
+        <label>Prazo (meses): <input readonly id="meses" type="number" /></label>
+        <label>Juros ao mês: <input readonly id="jurosam" type="number" /></label>
+        <label>Juros acumulados: <input readonly id="total" type="numer" /></label>
       </div>
-    </div>
-    <div>
-      <br />
-      <button>Simular</button>
-    </div>
-
-    <div>
-      <h1>Resultado</h1>
-      <div>
-        <label>Prazo (meses):</label>
-        <label>Juros ao mês:</label>
-        <label>Juros acumulados:</label>
-      </div>
-      <div>
-        <input type="number" />
-        <input type="number" />
-        <input type="numer" />
-      </div>
-    </div>
-    <br />
-
-    <container>
       <table>
         <thead>
-          <th>Prestação</th>
-          <th>Amortização</th>
-          <th>Juros</th>
-          <th>Total</th>
+          <tr>
+            <th>Prestação</th>
+            <th>Amortização</th>
+            <th>Juros</th>
+            <th>Total</th>
+          </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
       </table>
-    </container>
-  </body>
+      <script src="script.js"></script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
